@@ -401,8 +401,7 @@ def FoodEvent():
     add_line(" ")
     Mystat["FOOD"] += event.Food[selected]["effect"]["food"]
     Sleep()
-    DangerCheck(0.3)
-    update_info_box()
+    Mystat["DANGER"] += random.random() * 0.3
 
 
 # 危险值--三大事件的附属
