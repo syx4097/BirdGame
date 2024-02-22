@@ -402,6 +402,7 @@ def FoodEvent():
     Mystat["FOOD"] += event.Food[selected]["effect"]["food"]
     Sleep()
     Mystat["DANGER"] += random.random() * 0.3
+    update_info_box()
 
 
 # 危险值--三大事件的附属
@@ -506,7 +507,7 @@ def FightEvent(enemy):
         roll_random = random.choice(range(1, 13))
         roll_value = Myinfo["fight"][Mychoice - 1]
         roll = roll_random + roll_value
-        target = enemy["fight"][Mychoice - 1] - tmp[Mychoice - 1]
+        target = enemy["fight"][Mychoice - 1] + tmp[Mychoice - 1]
         add_line(" ")
         add_line(f"掷骰<1d12={roll_random}> + 属性<{roll_value}> = 最终结果<{roll}>")
         Sleep()
