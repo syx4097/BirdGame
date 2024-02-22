@@ -483,7 +483,7 @@ def FightEvent(enemy):
     Sleep()
 
     if Mystat["AGE"] >= Myinfo["agelim"]:
-        tmp = [2, 2, 0]  # 对手临时修正值
+        tmp = [2, 2, -2]  # 对手临时修正值
     else:
         tmp = [0, 0, 0]
     result = ""
