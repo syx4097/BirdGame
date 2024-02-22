@@ -1,5 +1,5 @@
 # 觅食 Food 遇到人类 Human 繁殖 Breed 朋友 Friend 朋友礼物 Gift 死亡事件 Death 结束语 Endtext
-# 初始技能 出生事件
+# 初始技能和出生事件待补充
 
 Friend = {
     101: {"name": "黄眉柳莺", "tasty": 0, "gift": 1},
